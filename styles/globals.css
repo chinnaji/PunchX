@@ -56,3 +56,17 @@ ol li{
 ol{
   margin: 20px 0px;
 } */
+.subNav::-webkit-scrollbar {
+  width: 10px;
+  height: 0px;
+  background: #d1d3d8;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #004fee;
+  border-radius: 10px;
+}
+
+.subNav::-webkit-scrollbar-thumb:hover {
+  background: #01143b;
+}
