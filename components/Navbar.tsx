@@ -149,7 +149,7 @@ function Navbar() {
           </nav>
         </Container>
 
-        <nav className="  bg-dark sticky top-0   mt-5  w-full  overflow-hidden border-t pt-4 pb-2">
+        <nav className="  bg-dark sticky top-0   mt-2  w-full  overflow-hidden border-t pt-4 pb-2">
           <Container>
             <div className="subNav align-items-center flex w-full overflow-x-auto text-zinc-600 md:justify-center">
               {subNavLinks.map((subNavLink, index) => (
