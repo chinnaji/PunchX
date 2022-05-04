@@ -34,7 +34,7 @@ function Hero({ posts }: TheroProps) {
             date={x_date}
             author={x_author}
             slug={slug}
-            classes="h-[400px] lg:h-[535px] lg:w-1/2"
+            classes="h-[350px] lg:h-[535px] lg:w-1/2"
           />
 
           <div className="w-full flex-col p-2 lg:w-1/2 ">
@@ -58,7 +58,7 @@ function Hero({ posts }: TheroProps) {
                     date={x_date}
                     author={x_author}
                     slug={slug}
-                    classes="h-80 md:h-[400px] lg:w-1/2"
+                    classes=""
                   />
                 )
               )}

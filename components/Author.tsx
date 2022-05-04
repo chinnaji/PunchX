@@ -7,7 +7,7 @@ type Tauthor = {
 function Author({ name, isLightBg }: Tauthor) {
   return (
     <span
-      className={`text-md uppercase ${
+      className={`text-md text-sm uppercase lg:text-base ${
         isLightBg ? 'text-zinc-900' : 'text-white'
       }`}
     >

@@ -18,7 +18,7 @@ function WithImageAside({
     <>
       <div className="my-3 flex flex-wrap  text-zinc-50 ">
         <span className="relative block  w-full   p-2  md:w-1/2 lg:w-[30%] ">
-          <div className="relative mb-5 mt-10  block h-80 w-full  overflow-hidden rounded-md p-2 lg:my-0 lg:h-[150px] ">
+          <div className="relative mb-3 mt-10 block  h-[300px] w-full overflow-hidden  rounded-md p-2 lg:my-0 lg:mb-5 lg:h-[150px] ">
             <Image
               src={img}
               layout="fill"
@@ -30,7 +30,7 @@ function WithImageAside({
           </div>
         </span>
 
-        <div className="ml-5 w-full p-2 md:w-1/2 lg:w-[60%]">
+        <div className="w-full p-2 md:w-1/2 lg:ml-5 lg:w-[60%]">
           <div>
             <CategoryPill name={category} />
           </div>
