@@ -36,9 +36,18 @@ function WithImageAside({
           </div>
           <Link passHref href={`/${slug}`}>
             <a>
-              <h3 className="h mt-3 mb-2 cursor-pointer text-xl font-semibold text-black transition-all ease-linear hover:underline">
+              {/* <h3 className="h mt-3 mb-2 cursor-pointer text-xl font-semibold text-black transition-all ease-linear hover:underline">
                 {title.length > 64 ? `${title.slice(0, 64)}...` : title}
-              </h3>
+              </h3> */}
+
+              <h3
+                className="h mt-3 mb-2 cursor-pointer text-xl font-semibold text-black transition-all ease-linear hover:underline"
+                dangerouslySetInnerHTML={{
+                  __html: ` ${
+                    title.length > 64 ? `${title.slice(0, 64)}...` : title
+                  }`,
+                }}
+              />
             </a>
           </Link>
           <div className="my-5 flex items-center">
