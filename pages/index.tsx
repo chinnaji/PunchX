@@ -3,10 +3,14 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { GetStaticProps } from 'next'
 import { TAllPosts } from '../interfaces'
+import Hero from '../components/homepage/Hero'
 
-const Home: NextPage<{ posts: TAllPosts }> = ({ posts }) => {
-  console.log(posts)
-  return <main>a</main>
+const Home: NextPage<{ posts: TAllPosts[] }> = ({ posts }) => {
+  return (
+    <main>
+      <Hero posts={posts.slice(0, 5)} />
+    </main>
+  )
 }
 
 export default Home
@@ -17,10 +21,10 @@ export const getStaticProps: GetStaticProps = async (context) => {
   )
   const posts = await data.json()
 
-  // res.status(200).json(posts)
   return {
     props: {
       posts,
     },
+    revalidate: 1,
   }
 }

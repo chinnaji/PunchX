@@ -1,7 +1,17 @@
-import React from 'react'
-
 export type Tchildren = {
   children: React.ReactNode
+}
+export type Tcategories = {
+  name: string
+}
+export type TblocksProps = {
+  img: string
+  category: string
+  title: string
+  date: string
+  author: string
+  slug: string
+  classes: string
 }
 
 export interface TAllPosts {

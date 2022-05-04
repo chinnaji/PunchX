@@ -71,10 +71,6 @@ function Navbar() {
       title: 'Health',
       path: '/health',
     },
-    // {
-    //   title: "Contact",
-    //   path: "/#contact",
-    // },
   ]
 
   const [isSidebar, setIsSidebar] = useState(false)
@@ -94,34 +90,20 @@ function Navbar() {
   // });
   return (
     <>
-      <header className="  bg-dark sticky top-0 z-50  max-h-28 w-full  overflow-hidden  border-b py-3">
+      <header className="  sticky top-0 z-50   w-full overflow-hidden  border-b  bg-white pt-3 pb-1">
         <Container>
           <nav className="  flex items-center justify-between  ">
             <Link passHref href="/">
-              {/* <a className="relative -ml-5 block h-9 w-48 cursor-pointer md:-ml-0 md:h-12">
-              <Image
-                src={logo}
-                layout="fill"
-                alt="shodex garden logo"
-                priority
-                loading="eager"
-              />
-            </a> */}
               <h3 className="text-3xl font-semibold text-zinc-900">
                 PUNCH<span className="text-4xl text-red-600">X</span>
               </h3>
-              {/* <a>
-              <h1 className="text-orange text-xl cursor-pointer font-bold">
-                ANDROIDPILL
-              </h1>
-            </a> */}
             </Link>
 
             <div className="flex">
               <div
                 className={` ${
                   isSidebar ? 'block ' : 'hidden'
-                } fixed inset-0 h-screen bg-white  duration-500  ease-in-out lg:relative
+                } fixed inset-0 z-50 h-screen bg-white duration-500  ease-in-out lg:relative
           lg:block lg:h-full`}
               >
                 {/* <div className="relativ"> */}
@@ -166,25 +148,25 @@ function Navbar() {
             {/* secondary navbar  */}
           </nav>
         </Container>
-      </header>
 
-      <nav className="  bg-dark sticky top-0 z-50 mb-5  max-h-28 w-full  overflow-hidden  border-b py-3">
-        <Container>
-          <div className="subNav align-items-center flex w-full overflow-x-auto text-zinc-600 md:justify-center">
-            {subNavLinks.map((subNavLink, index) => (
-              <Link passHref href={subNavLink.path}>
-                <a
-                  className={`${
-                    router.pathname == subNavLink.path ? 'text-red-600' : null
-                  } mx-10 whitespace-nowrap hover:text-red-600`}
-                >
-                  {subNavLink.title}
-                </a>
-              </Link>
-            ))}
-          </div>
-        </Container>
-      </nav>
+        <nav className="  bg-dark sticky top-0   mt-5  w-full  overflow-hidden border-t pt-4 pb-2">
+          <Container>
+            <div className="subNav align-items-center flex w-full overflow-x-auto text-zinc-600 md:justify-center">
+              {subNavLinks.map((subNavLink, index) => (
+                <Link passHref href={subNavLink.path} key={index}>
+                  <a
+                    className={`${
+                      router.pathname == subNavLink.path ? 'text-red-600' : null
+                    } mx-7 whitespace-nowrap hover:text-red-600 md:mx-10`}
+                  >
+                    {subNavLink.title}
+                  </a>
+                </Link>
+              ))}
+            </div>
+          </Container>
+        </nav>
+      </header>
 
       {isSearch ? <Search setIsSearch={setIsSearch} /> : null}
     </>
