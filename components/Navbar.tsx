@@ -94,7 +94,7 @@ function Navbar() {
         <Container>
           <nav className="  flex items-center justify-between  ">
             <Link passHref href="/">
-              <h3 className="text-3xl font-semibold text-zinc-900">
+              <h3 className="cursor-pointer text-3xl font-semibold text-zinc-900">
                 PUNCH<span className="text-4xl text-red-600">X</span>
               </h3>
             </Link>

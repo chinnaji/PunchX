@@ -3,6 +3,7 @@ export type Tchildren = {
 }
 export type Tcategories = {
   name: string
+  isBg?: boolean
 }
 export type TblocksProps = {
   img: string
@@ -11,7 +12,7 @@ export type TblocksProps = {
   date: string
   author: string
   slug: string
-  classes: string
+  classes?: string
 }
 
 export interface TAllPosts {
@@ -76,4 +77,12 @@ export interface XMetadata {
   _yoast_wpseo_content_score: string
   _yoast_wpseo_estimated_reading_time_minutes: string
   _yoast_wpseo_primary_category: string
+}
+
+export type ThomePageData = {
+  posts: TAllPosts[]
+  news: TAllPosts[]
+  sport: TAllPosts[]
+  business: TAllPosts[]
+  politics: TAllPosts[]
 }

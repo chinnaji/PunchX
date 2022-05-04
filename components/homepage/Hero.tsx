@@ -1,11 +1,7 @@
 import React from 'react'
-import Image from 'next/image'
-import CategoryPill from '../CategoryPill'
-import Link from 'next/link'
 import { TAllPosts } from '../../interfaces'
 import Container from '../Container'
-import Date from '../Date'
-import Author from '../Author'
+
 import WithBgImage from '../blocks/withBgImage'
 import WithImageAside from '../blocks/WithImageAside'
 

@@ -35,20 +35,11 @@ function WithBgImage({
                 <CategoryPill name={category} />
               </div>
 
-              <Link passHref href={`/${slug}`}>
-                <a>
-                  <h3 className="h mt-3 mb-2 cursor-pointer text-3xl font-semibold text-white transition-all ease-linear hover:underline">
-                    {title}
-                  </h3>
-                </a>
-              </Link>
-              {/* <p className="text-sm">{firstPostItem.node.excerpt}</p> */}
-              {/* <div
-                    className="mb-3 text-sm"
-                    dangerouslySetInnerHTML={{
-                      __html: firstPostItem?.node?.excerpt,
-                    }}
-                  /> */}
+              <a href={`https://punchng.com/${slug}`}>
+                <h3 className="h mt-3 mb-2 cursor-pointer text-3xl font-semibold text-white transition-all ease-linear hover:underline">
+                  {title}
+                </h3>
+              </a>
 
               <div className="my-5 flex items-center">
                 <Date value={date} />
