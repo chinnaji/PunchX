@@ -36,7 +36,7 @@ function WithBgImage({
               </div>
 
               <a href={`https://punchng.com/${slug}`}>
-                <h3 className="h mt-3 mb-2 cursor-pointer text-3xl font-semibold text-white transition-all ease-linear hover:underline">
+                <h3 className="h mt-3 mb-2 cursor-pointer text-xl font-semibold text-white transition-all ease-linear hover:underline md:text-3xl">
                   {title}
                 </h3>
               </a>

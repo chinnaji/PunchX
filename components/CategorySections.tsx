@@ -51,7 +51,9 @@ function CategorySections({ business, politics, sport, news }: TheroProps) {
           <div className="w-[50%] lg:w-[20%]">
             {/* <span className="block h-3 w-3 rounded-full bg-red-600"></span> */}
             <p className="flex  h-3 w-full items-center rounded-full ">
-              <h2 className="text-4xl font-medium text-black">What New?</h2>
+              <h2 className="text-2xl font-medium text-black lg:text-4xl">
+                What New?
+              </h2>
               <div className=" ml-3 h-3 w-3 rounded-full bg-red-600"> </div>
             </p>
           </div>
@@ -60,12 +62,12 @@ function CategorySections({ business, politics, sport, news }: TheroProps) {
             <span className="block h-1 w-full  border-t-2"></span>
             <span className="mt-0.5 block h-1  w-full border-t-2"></span>
           </div>
-          <div className="flex w-full justify-center pt-16 lg:w-[30%] lg:pt-0">
+          <div className="flex w-full justify-center pt-12 lg:w-[30%] lg:pt-0">
             {tabToogle.map(({ title, value }) => (
               <span
                 key={title}
                 onClick={() => setCurrent(value)}
-                className={`cursor-pointer border border-red-600 px-5 py-2 capitalize transition-all ease-linear ${
+                className={`cursor-pointer border border-red-600 px-5 py-2 text-sm capitalize transition-all ease-linear md:text-base ${
                   current === value
                     ? 'bg-red-600 text-white shadow-lg shadow-red-600/50'
                     : 'bg-white text-black hover:bg-red-700 hover:text-zinc-100'
