@@ -64,11 +64,11 @@ function Navbar() {
       path: '/metro-plus',
     },
     {
-      title: '  Business',
+      title: '  a',
       path: '/business',
     },
     {
-      title: 'Health',
+      title: 's',
       path: '/health',
     },
   ]
