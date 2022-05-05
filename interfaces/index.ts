@@ -85,4 +85,5 @@ export type ThomePageData = {
   sport: TAllPosts[]
   business: TAllPosts[]
   politics: TAllPosts[]
+  entertainment: TAllPosts[]
 }

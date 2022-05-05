@@ -8,7 +8,7 @@ function CategoryPill({ name, isBg }: Tcategories) {
       <span
         className={`mr-3 cursor-pointer rounded ${
           !isBg ? 'bg-red-600 text-zinc-50' : 'text-red-600'
-        } px-3 py-1 text-sm font-semibold uppercase  hover:bg-red-700`}
+        } px-3 py-1 text-xs font-semibold uppercase  hover:bg-red-700`}
       >
         {name}
       </span>

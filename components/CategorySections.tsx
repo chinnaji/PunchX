@@ -67,7 +67,7 @@ function CategorySections({ business, politics, sport, news }: TheroProps) {
               <span
                 key={title}
                 onClick={() => setCurrent(value)}
-                className={`cursor-pointer border border-red-600 px-5 py-2 text-sm capitalize transition-all ease-linear md:text-base ${
+                className={`cursor-pointer border border-red-600 px-3 py-2 text-sm capitalize transition-all ease-linear md:px-5 md:text-base ${
                   current === value
                     ? 'bg-red-600 text-white shadow-lg shadow-red-600/50'
                     : 'bg-white text-black hover:bg-red-700 hover:text-zinc-100'
@@ -88,7 +88,7 @@ function CategorySections({ business, politics, sport, news }: TheroProps) {
             date={x_date}
             author={x_author}
             slug={slug}
-            classes="h-[350px] lg:h-[560px] lg:w-1/2 lg:-mt-5"
+            classes="h-[350px] lg:h-[560px] lg:w-1/2 lg:-mt-5 text-xl md:text-2xl"
           />
 
           <div className="w-full flex-col p-2 lg:w-1/2 ">
