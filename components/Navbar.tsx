@@ -44,8 +44,8 @@ function Navbar() {
   ]
   const subNavLinks = [
     {
-      title: 'Spice',
-      path: '/spice',
+      title: 'Tech',
+      path: '/tech',
     },
     {
       title: 'Sex & Relationship',
@@ -60,16 +60,16 @@ function Navbar() {
       path: '/editorial',
     },
     {
-      title: 'Metro Plus',
-      path: '/metro-plus',
+      title: 'Interviews',
+      path: '/interviews',
     },
     {
-      title: '  a',
-      path: '/business',
+      title: 'Featured',
+      path: '/featured',
     },
     {
-      title: 's',
-      path: '/health',
+      title: 'Family',
+      path: '/family',
     },
   ]
 
