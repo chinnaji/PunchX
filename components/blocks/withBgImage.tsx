@@ -29,7 +29,7 @@ function WithBgImage({
           />
 
           <div className="overlay absolute z-20 h-full w-full rounded bg-black bg-opacity-40"></div>
-          <div className="from-dark absolute inset-0  z-30 flex items-end rounded bg-gradient-to-t  p-3 lg:p-6">
+          <div className="from-dark absolute inset-0  z-30 flex items-end rounded bg-gradient-to-t  p-3 lg:p-4">
             <span className="block">
               <div>
                 <CategoryPill name={category} />
@@ -49,7 +49,7 @@ function WithBgImage({
                 />
               </a>
 
-              <div className="my-5 flex items-center">
+              <div className="mt-5 mb-3 flex items-center">
                 <Date value={date} />
                 <Author name={author} />
               </div>

@@ -12,6 +12,7 @@ function WithImageAside({
   date,
   author,
   slug,
+  classes,
 }: TblocksProps) {
   return (
     <>
@@ -35,7 +36,7 @@ function WithImageAside({
           </div>
           <a href={`https://punchng.com/${slug}`}>
             <h3
-              className=" mt-3 mb-2 cursor-pointer text-lg font-semibold text-black transition-all ease-linear hover:underline"
+              className={` ${classes} mt-3 mb-2 cursor-pointer  font-semibold text-black transition-all ease-linear hover:underline`}
               dangerouslySetInnerHTML={{
                 __html: ` ${
                   title.length > 64 ? `${title.slice(0, 64)}...` : title

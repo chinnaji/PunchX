@@ -54,7 +54,7 @@ function Hero({ posts }: TheroProps) {
                     date={x_date}
                     author={x_author}
                     slug={slug}
-                    classes=""
+                    classes="text-lg"
                   />
                 )
               )}
