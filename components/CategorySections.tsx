@@ -47,7 +47,7 @@ function CategorySections({ business, politics, sport, news }: TheroProps) {
     <>
       <Container>
         {/* toogle tab */}
-        <div className=" mt-10 flex  flex-wrap items-center justify-center">
+        <div className=" mt-10 flex flex-wrap  items-center justify-center ">
           <div className="w-[50%] lg:w-[20%]">
             {/* <span className="block h-3 w-3 rounded-full bg-red-600"></span> */}
             <p className="flex  h-3 w-full items-center rounded-full ">
@@ -80,7 +80,7 @@ function CategorySections({ business, politics, sport, news }: TheroProps) {
         </div>
 
         {/* tab container */}
-        <section className="mt-8 flex flex-wrap items-center">
+        <section className="mt-8 flex flex-wrap items-center lg:flex-row-reverse">
           <WithBgImage
             img={x_featured_media_original}
             category={x_categories}

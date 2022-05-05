@@ -8,7 +8,7 @@ type Tdate = {
 function Date({ value, isLightBg }: Tdate) {
   return (
     <span
-      className={`mr-8 flex items-center text-sm lg:text-base ${
+      className={`mr-4 flex items-center text-sm md:mr-8 lg:text-base ${
         isLightBg ? 'text-zinc-500' : 'text-white'
       }`}
     >

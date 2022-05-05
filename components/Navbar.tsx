@@ -149,7 +149,7 @@ function Navbar() {
           </nav>
         </Container>
 
-        <nav className="  bg-dark sticky top-0   mt-2  w-full  overflow-hidden border-t pt-4 pb-2">
+        <nav className="  bg-dark sticky top-0     w-full  overflow-hidden border-t pt-4 pb-2">
           <Container>
             <div className="subNav align-items-center flex w-full overflow-x-auto text-zinc-600 md:justify-center">
               {subNavLinks.map((subNavLink, index) => (
@@ -157,7 +157,7 @@ function Navbar() {
                   <a
                     className={`${
                       router.pathname == subNavLink.path ? 'text-red-600' : null
-                    } mx-7 whitespace-nowrap hover:text-red-600 md:mx-10`}
+                    } ld:mx-7 mx-4 whitespace-nowrap text-sm hover:text-red-600 md:mx-10`}
                   >
                     {subNavLink.title}
                   </a>

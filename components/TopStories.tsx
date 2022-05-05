@@ -12,12 +12,12 @@ type TTopStoriesProps = {
 
 function TopStories({ topStories }: TTopStoriesProps) {
   return (
-    <section className="bg-red-400 bg-opacity-5 py-16">
+    <section className="bg-red-400 bg-opacity-20 py-16">
       <Container>
-        <h2 className=" -mb-10 text-2xl font-semibold text-black md:text-4xl">
-          Top Stories
+        <h2 className=" -mb-10 pl-5 text-2xl font-semibold text-black md:text-4xl">
+          Hot🔥 Stories
         </h2>
-        <div className="mt-10 flex flex-wrap items-center">
+        <div className="flex flex-wrap items-center md:mt-10">
           {topStories.map(
             ({
               x_featured_media_original,

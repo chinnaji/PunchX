@@ -14,7 +14,7 @@ function Entertainment({ entertainment }: TheroProps) {
     <>
       <Container>
         <section className="my-16 flex flex-wrap items-center py-10">
-          <div className="mb-10 w-[40%] pl-3">
+          <div className="mb-10 w-[60%] pl-3 md:w-[50%] lg:w-[30%]">
             {/* <span className="block h-3 w-3 rounded-full bg-red-600"></span> */}
             <p className="flex  h-3 w-full items-center rounded-full ">
               <h2 className="text-2xl font-medium text-black lg:text-4xl">
@@ -24,7 +24,7 @@ function Entertainment({ entertainment }: TheroProps) {
             </p>
           </div>
 
-          <div className="mb-10 flex w-[60%] flex-col pr-5  pl-5 lg:pr-10">
+          <div className="mb-10 flex w-[40%] flex-col pr-5 pl-5 md:w-[50%] lg:w-[70%] lg:pr-10">
             <span className="block h-1 w-full  border-t-2"></span>
             <span className="mt-0.5 block h-1  w-full border-t-2"></span>
           </div>
