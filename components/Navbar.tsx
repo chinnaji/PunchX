@@ -51,10 +51,10 @@ function Navbar() {
       title: 'Sex & Relationship',
       path: '/sex-relationship',
     },
-    {
-      title: 'Education',
-      path: '/education',
-    },
+    // {
+    //   title: 'Education',
+    //   path: '/education',
+    // },
     {
       title: 'Editorial',
       path: '/editorial',

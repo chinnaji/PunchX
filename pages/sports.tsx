@@ -7,15 +7,7 @@ import FullPage from '../components/FullPage'
 const Sports: NextPage<{ data: TAllPosts[] }> = ({ data }) => {
   return (
     <main>
-      {/* {/* <Hero posts={posts.slice(0, 5)} /> */}
       <FullPage pageData={data} />
-      {/* <CategorySections
-        sport={sport}
-        news={news}
-        business={business}
-        politics={politics}
-      /> */}
-      {/* <Entertainment entertainment={entertainment} /> */}
     </main>
   )
 }

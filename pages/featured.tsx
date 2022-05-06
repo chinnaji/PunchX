@@ -5,9 +5,10 @@ import { TAllPosts } from '../interfaces'
 import FullPage from '../components/FullPage'
 
 const Featured: NextPage<{ data: TAllPosts[] }> = ({ data }) => {
+  console.log(data)
   return (
     <main>
-      <FullPage pageData={data} />
+      <FullPage pageData={data} />{' '}
     </main>
   )
 }

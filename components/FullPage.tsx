@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import { TAllPosts } from '../interfaces'
 import Container from './Container'
-
+import noImg from '../images/no-image.jpg'
 import WithImageTop from './blocks/WithImageTop'
 
 type TPageData = {
@@ -59,7 +59,7 @@ function FullPage({ pageData }: TPageData) {
               }) => (
                 <WithImageTop
                   key={id}
-                  img={x_featured_media_original}
+                  img={x_featured_media_original || noImg.src}
                   category={x_categories}
                   title={title.rendered}
                   date={x_date}
