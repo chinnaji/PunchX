@@ -39,7 +39,7 @@ function FullPage({ pageData }: TPageData) {
   }, [watchPoint, options])
 
   return (
-    <section className="bg-red-400 bg-opacity-20 py-16">
+    <section className=" bg-opacity-20 py-16">
       <Container>
         <h2 className=" -mb-10 pl-5 text-2xl font-semibold text-black md:text-4xl">
           Hot🔥 Stories
